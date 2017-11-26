@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "ie >= 9"]
+        },
+        "modules": false, //保存es6语法
+        "loose": true  //允许插件自由转换，非严格模式
+      }
+    ],
+    "stage-0",
+    "react"
+  ],
+  "plugins": ["transform-decorators-legacy"]
+}
