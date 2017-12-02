@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const glob = require('glob');
 const path = require('path');
-const config = require('./config');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');//清除编译文件
@@ -179,7 +178,7 @@ const htmlPlugin = new HtmlWebpackPlugin({
     collapseWhitespace: true,
     removeAttributeQuotes: true
   },
-  chunks: ['manifest', 'vendors', newname]
+  chunks: ['manifest', 'vendors', 'app']
 })
 webpackConfig.plugins.push(htmlPlugin);
 
